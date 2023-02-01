@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap");
+body {
+  font: 18px "Nunito", sans-serif;
+  color: black;
+  min-height: 10vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: url("../Fotos/bg.png") no-repeat center;
+  background-size: cover;
+  -webkit-animation: backgroundZoomAnimate 20s forwards;
+          animation: backgroundZoomAnimate 20s forwards;
+}
+@-webkit-keyframes backgroundZoomAnimate {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+@keyframes backgroundZoomAnimate {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+body .container {
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+body .miperfil {
+  box-shadow: 0 18px 200px -60px black;
+  border-radius: 50px;
+  width: 550px;
+  position: relative;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 4rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+body .miperfil_img img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 0 10px 60px -10px rgba(13, 28, 39, 0.5);
+}
+
+body .miperfil__top {
+  text-align: center;
+}
+body .miperfil__top h3 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+body .miperfil__top p {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+body .miperfil__top p i {
+  margin-right: 5px;
+}
+body .miperfil__exp {
+  display: flex;
+  justify-content: space-around;
+}
+body .miperfil__exp-text {
+  text-align: center;
+}
+
+body .miperfil__exp-text .miperfil__exp-number {
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-size: 2rem;
+}
+body .miperfil__exp-text .miperfil__exp-title {
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.4);
+  margin-top: 20px;
+}
+body .miperfil__social {
+  display: flex;
+  justify-content: space-around;
+}
+body .miperfil__social a {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40%;
+  transition: all 0.3s;
+}
+
+body .miperfil__social span {
+  width: 50px;
+  height: 0px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  font-size: 15px;
+}
+body .miperfil__social a:hover {
+  transform: translateY(-10px);
+}
+body .miperfil__social a svg {
+  color: #fff;
+}
+body .miperfil__social .mostrar {
+  background: linear-gradient(45deg, #3b5998, #0078d7);
+  box-shadow: 0 4px 30px rgba(43, 98, 169, 0.5);
+}
+body .miperfil__social .insertar {
+  background: linear-gradient(45deg, #00cc4e, #045719);
+  box-shadow: 0 4px 30px rgba(43, 98, 169, 0.5);
+}
+body .miperfil__social .borrar {
+  background: linear-gradient(45deg, #df0038, #520909);
+  box-shadow: 0 4px 30px rgba(43, 98, 169, 0.5);
+}
+body .miperfil__social .modificar {
+  background: linear-gradient(45deg, #e09200, #c1d700);
+  box-shadow: 0 4px 30px rgba(43, 98, 169, 0.5);
+}
+body .miperfil__social .buscar {
+  background: linear-gradient(45deg, #a8139c, #0d0a9c);
+  box-shadow: 0 4px 30px rgba(43, 98, 169, 0.5);
+}
+body .miperfil__action {
+  display: flex;
+  justify-content: space-around;
+}
+body .miperfil__action-btn {
+  color: #fff;
+  font-size: 2rem;
+  padding: 15px 0;
+  min-width: 200px;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s;
+  font-weight: 400;
+}
+body .miperfil__action .blue {
+  background: linear-gradient(45deg, #1da1f2, #0e71c8);
+  box-shadow: 0 4px 30px rgba(19, 127, 212, 0.4);
+}
+body .miperfil__action .blue:hover {
+  box-shadow: 0 7px 30px rgba(19, 127, 212, 0.75);
+  transform: translateY(-10px);
+}
+
+body .miperfil__caja {
+  display: flex;
+  justify-content: space-around;
+}
+
+body .miperfil__caja input{
+  width:200px;
+  padding: 10px 0;
+  font-size: 16px;
+  margin-bottom: 30px;
+  border: none;
+  border-radius:20px ;
+  border-bottom: 2px solid #000000;
+  outline: none;
+  text-align:center;
+  background-color: rgb(78, 77, 136);
+}
+
+body .miperfil__caja2 input{
+  width:200px;
+  padding: 10px 0;
+  font-size: 16px;
+  border: none;
+  text-align:center;
+  border-radius:20px ;
+  border-bottom: 2px solid #000000;
+  outline: none;
+  background-color: rgb(98, 97, 199);
+}
+
+body .miperfil__caja2 button{
+  width:200px;
+  padding: 10px 0;
+  font-size: 16px;
+  border: none;
+  text-align:center;
+  border-radius:20px ;
+  border-bottom: 2px solid #000000;
+  outline: none;
+  background-color: rgb(98, 97, 199);
+}
+
+body .miperfil__caja select{
+  width:200px;
+  padding: 10px 0;
+  font-size: 16px;
+  border: none;
+  text-align:center;
+  border-radius:20px ;
+  border-bottom: 2px solid #000000;
+  outline: none;
+  background-color: rgb(98, 97, 199);
+  margin: auto;
+}
+
+body .titulo_pequeño{
+  font-size: 16px;
+  margin-top:0px;
+  margin:auto;
+}
+
+body .titulo_grande{
+  font-size: 30px;
+  margin-top:0px;
+  margin:auto;
+}
+
+body .miperfil__caja3 a{
+  width:400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 16px;
+  border: none;
+  text-align:center;
+  border-radius:20px ;
+  border-bottom: 2px solid #000000;
+  outline: none;
+  background-color: rgb(98, 97, 199);
+}
+
+body .miperfil__caja label{
+  width:100px;
+  top:0;
+  left:0;
+  padding: 10px 0;
+  font-size: 16px;
+  color:#0400ff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+body .contenedor__tabla {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.78rem;
+}
+
+body .tabla{
+  border:2px solid #000000; 
+  border-collapse:collapse;
+  margin:auto;
+}
+
+body .tabla th{
+  color:white;
+  background: linear-gradient(45deg, #0144d3, #0078d7);
+  border:2px solid rgb(255, 255, 255);
+  padding: 5px;
+  text-align: center;
+}
+body .tabla td{
+  color:black;
+  background: linear-gradient(45deg, #e4e5e7, #73b3c7);
+  border:2px solid rgb(255, 255, 255); 
+  padding: 5px;
+  text-align: center;
+}
+
